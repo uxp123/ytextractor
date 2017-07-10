@@ -2,10 +2,10 @@ from __future__ import unicode_literals
 import youtube_dl 
 
 import json
-
 import subprocess
 import os
 import re
+import sys
 
 OUTPUT_FOLDER = 'videos/'
 
@@ -64,7 +64,8 @@ def extract_all(data):
             i += 1
 
 if __name__ == '__main__':
-    data = load_json('example.json')
+    json_file = str(sys.argv[1])
+    data = load_json(json_file)
     extract_all(data)
 
     """
