@@ -1,0 +1,34 @@
+{
+    "data": [
+        {
+            "clips": [
+                {
+                    "start": "00:00:03",
+                    "length": "00:00:07"
+                },
+                {
+                    "start": "00:00:08",
+                    "length": "00:00:03"
+                },
+                {
+                    "start": "00:00:10",
+                    "length": "00:00:10"
+                },
+                {
+                    "start": "00:00:15",
+                    "length": "00:00:02"
+                }
+            ],
+            "video_url": "https://www.youtube.com/watch?v=dP15zlyra3c"
+        },
+        {
+            "clips": [
+                {
+                    "start": "00:00:02",
+                    "length": "00:01:00"
+                }
+            ],
+            "video_url": "https://www.youtube.com/watch?v=Amq-qlqbjYA"
+        }
+    ]
+}
