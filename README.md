@@ -60,6 +60,8 @@ Then you're gucci.
 ## Documentation
 Very simple to use the only argument you can give it, is the name of the JSON file with the information. Each video will contain it's own folder with the title of the video. Inside the folder will be a `main.mp4` video which is the full video and `clipX.mp4` videos which will be the clips.
 
+All of this will be in the `videos` folder.
+
 ### How to run
 
 Feed it a JSON file
