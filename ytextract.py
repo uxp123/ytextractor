@@ -27,7 +27,7 @@ def download_video(url):
         video_title = video_title.replace(" ", "_")
         video_title = video_title.replace("/", "_")
         # setting next ydl option
-        file_path = OUTPUT_FOLDER + video_title + "/main.mp4"
+        file_path = OUTPUT_FOLDER + video_title + "/main_" + video_id +".mp4"
         ydl_opts = {
             'outtmpl': file_path,
             'format' : 'mp4'
@@ -56,11 +56,13 @@ def cut_video(filepath, start, length, outputname):
 def extract_all(data):
     for video in data['data']:
         clips = video['clips'] 
+        if len(clips) == 0:
+            continue
         video_url = video['video_url']
         file_path = download_video(video_url)
         i = 1
         for clip in clips:
-            cut_video(file_path, clip['start'], clip['length'], 'clip' + str(i) + '.mp4')
+            cut_video(file_path, clip['start'], clip['length'], 'clip' + '_' + clip['start'] + '.mp4')
             i += 1
 
 if __name__ == '__main__':
