@@ -1,4 +1,4 @@
-# Hack Week 2017 - YT Extractor
+# Hack Week @2017 - YT Extractor
 
 This Python script will take in a JSON file with YouTube video URLs and timestamps and will extract the main video and cut the videos to create the clips.
 
